@@ -1,29 +1,42 @@
 <template>
-    <div>
-        <h1>Esta es una carta donde sale info de empleo</h1>
+  <b-card class="d-flex align-items-center">
+    <img src="../assets/logo.png" alt="Imagen" class="custom-image">
+    <div class="flex-grow-1">
+      <div class="d-flex justify-content-between">
+        <h1 class="mb-0">Empleo</h1>
+        <div class="d-flex">
+          <b-button variant="primary">Tecnologia 1</b-button>
+          <b-button variant="primary">Tecnologia 2</b-button>
+          <b-button variant="primary">Tecnologia 3</b-button>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-3">
+        <div class="d-flex flex-column">
+          <p class="mb-0">Empresa</p>
+          <p class="mb-0">Lugar</p>
+          <p class="mb-0">Sueldo</p>
+          <p class="mb-0">Vacantes</p>
+          <p class="mb-0">Fecha</p>
+  </div>
+</div>
+
     </div>
+  </b-card>
 </template>
-  
-  <script>
-  export default {
-    
+
+<script>
+import { BCard, BButton } from 'bootstrap-vue';
+
+export default {
+  components: {
+    BCard,
+    BButton
   }
-  </script>
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
-  h3 {
-    margin: 40px 0 0;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  a {
-    color: #42b983;
-  }
-  </style>
+}
+</script>
+
+<style>
+.custom-image {
+  width: 80px;
+}
+</style>
