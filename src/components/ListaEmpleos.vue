@@ -1,6 +1,7 @@
 <template>
     <div>
         <h1>Workshop Vue PeakU</h1>
+        <h2>Trabajos IT</h2>
     </div>
 </template>
   
